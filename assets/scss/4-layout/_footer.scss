@@ -13,31 +13,71 @@ footer {
     padding-bottom: 24px;
     gap: 48px;
   }
-  .join-community {
-    display: flex;
-    padding: 24px;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 24px;
-    height: max-content;
-    border-radius: 32px;
-    border: 1px solid #2c2d47;
-    background: linear-gradient(
-      137deg,
-      rgba(27, 28, 54, 0.16) 23.98%,
-      rgba(112, 113, 122, 0.16) 65.73%
-    );
-    backdrop-filter: blur(6px);
-    img {
-      width: 48px;
+  .roullete--description{
+    img{
+      width: 250px;
       height: auto;
-      &:first-child {
-        margin-right: 8px;
-      }
+      margin-bottom: 24px;
+    }
+    p{
+      max-width: 450px;
+      margin-bottom: 24px;
+    }
+    .bullet-address{
+      background-color: rgba($color: #fff, $alpha: 0.1);
+      padding: 8px;
+      border-radius: 8px;
+
+    }
+
+    #snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      bottom: 30px;
+      font-size: 17px;
+    }
+    #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    
+    @-webkit-keyframes fadein {
+      from {bottom: 0; opacity: 0;} 
+      to {bottom: 30px; opacity: 1;}
+    }
+    
+    @keyframes fadein {
+      from {bottom: 0; opacity: 0;}
+      to {bottom: 30px; opacity: 1;}
+    }
+    
+    @-webkit-keyframes fadeout {
+      from {bottom: 30px; opacity: 1;} 
+      to {bottom: 0; opacity: 0;}
+    }
+    
+    @keyframes fadeout {
+      from {bottom: 30px; opacity: 1;}
+      to {bottom: 0; opacity: 0;}
     }
   }
+  .btn-group{
+    display: flex;
+    gap: 16px;
+  }
+
   article {
-    h5 {
+    h4 {
       margin-bottom: 16px;
     }
     ul{
@@ -45,6 +85,11 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
+  }
+  .bottom-footer{
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
   }
 }
 

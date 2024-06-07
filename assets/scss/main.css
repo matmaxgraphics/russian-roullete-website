@@ -192,34 +192,75 @@ footer .footer--wrapper {
   padding-bottom: 24px;
   gap: 48px;
 }
-footer .join-community {
-  display: flex;
-  padding: 24px;
-  align-items: center;
-  flex-flow: row wrap;
-  gap: 24px;
-  height: -moz-max-content;
-  height: max-content;
-  border-radius: 32px;
-  border: 1px solid #2c2d47;
-  background: linear-gradient(137deg, rgba(27, 28, 54, 0.16) 23.98%, rgba(112, 113, 122, 0.16) 65.73%);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-}
-footer .join-community img {
-  width: 48px;
+footer .roullete--description img {
+  width: 250px;
   height: auto;
+  margin-bottom: 24px;
 }
-footer .join-community img:first-child {
-  margin-right: 8px;
+footer .roullete--description p {
+  max-width: 450px;
+  margin-bottom: 24px;
 }
-footer article h5 {
+footer .roullete--description .bullet-address {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+}
+footer .roullete--description #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+footer .roullete--description #snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+footer .btn-group {
+  display: flex;
+  gap: 16px;
+}
+footer article h4 {
   margin-bottom: 16px;
 }
 footer article ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+footer .bottom-footer {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
 }
 
 @media (max-width: 850px) {
@@ -562,7 +603,7 @@ nav .navbar__items {
 }
 
 .tokenomics-section {
-  padding: 48px 0;
+  padding: 48px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .tokenomics-section h2 {
@@ -572,9 +613,11 @@ nav .navbar__items {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1000px;
-  margin: 24px auto;
+  margin: 48px auto;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .tokenomics-section .token-description p {
   color: #b7c3c7;
@@ -591,4 +634,157 @@ nav .navbar__items {
   align-items: center;
   max-width: 1400px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 1400px;
+  margin: auto;
+  border-radius: 16px;
+  padding: 24px;
+}
+.tokenomics-section .token-chart canva {
+  width: 100%;
+}
+.tokenomics-section .chart-data {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 24px;
+  max-height: 200px;
+}
+.tokenomics-section .data--item span {
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.tokenomics-section .color-1 {
+  background-color: rgba(254, 101, 0, 0.1);
+  color: #fe6500;
+}
+.tokenomics-section .color-2 {
+  background-color: rgba(151, 71, 255, 0.1);
+  color: #9747ff;
+}
+.tokenomics-section .color-3 {
+  background-color: rgba(2, 109, 187, 0.1);
+  color: #026dbb;
+}
+.tokenomics-section .color-4 {
+  background-color: rgba(255, 175, 2, 0.1);
+  color: #ffaf02;
+}
+.tokenomics-section .color-5 {
+  background-color: rgba(135, 244, 190, 0.1);
+  color: #87f4be;
+}
+.tokenomics-section .color-6 {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.tokenomics-section .color-7 {
+  background-color: rgba(221, 69, 151, 0.1);
+  color: #dd4597;
+}
+
+@media (max-width: 800px) {
+  .tokenomics-section .tokenomics--wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+@media (max-width: 500px) {
+  .tokenomics-section .chart-data {
+    flex-flow: row wrap;
+    max-height: unset;
+  }
+}
+.faqs-section h2 {
+  text-align: center;
+  margin: 48px 0;
+}
+.faqs-section button.accordion {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0px;
+  outline: none;
+  border-radius: 8px;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.faqs-section button.accordion:after {
+  font-family: remixicon !important;
+  content: "\ea4e";
+  font-size: 18px;
+  float: right;
+}
+.faqs-section .is-open {
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+.faqs-section button.accordion.is-open:after {
+  content: "\ea78";
+}
+.faqs-section button.accordion:hover,
+.faqs-section button.accordion.is-open {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.faqs-section .accordion-content {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: max-height 0.2s ease-in-out;
+  border-radius: 0 0 8px 8px;
+}
+.faqs-section .accordion-content p {
+  margin: 8px 0;
+}
+
+.roadmap-section h2 {
+  text-align: center;
+  margin: 32px;
+}
+.roadmap-section .roadmaps-container {
+  display: flex;
+  gap: 24px;
+}
+.roadmap-section .roadmap--item {
+  width: calc(33.3% - 0px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 16px;
+}
+.roadmap-section .roadmap--item h5 {
+  margin-bottom: 16px;
+}
+.roadmap-section .roadmap--item ul {
+  list-style: disc;
+  margin-left: 16px;
+}
+.roadmap-section .roadmap--item li {
+  margin-top: 16px;
+}
+.roadmap-section .btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 48px 0;
+}
+
+@media (max-width: 800px) {
+  .roadmap-section .roadmaps-container {
+    flex-wrap: wrap;
+  }
+  .roadmap-section .roadmap--item {
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 600px) {
+  .roadmap-section .roadmap--item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

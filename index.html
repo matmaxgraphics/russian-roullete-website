@@ -323,28 +323,36 @@
 
       <div class="tokenomics--wrapper" id="tokenomics-section">
         <article class="token-chart">
-          <canvas id="myChart" style="width: 100%; height: 100%"></canvas>
+          <canvas id="myChart" style="width: 120%; height: 120%"></canvas>
         </article>
 
         <article class="chart-data">
           <div class="data--item">
-            <p><span>51%</span>Mining</p>
+            <p><span class="color-1">51%</span>Mining</p>
           </div>
 
           <div class="data--item">
-            <p><span>51%</span>Mining</p>
+            <p><span class="color-2">20%</span>Devs</p>
           </div>
 
           <div class="data--item">
-            <p><span>51%</span>Mining</p>
+            <p><span class="color-3">10%</span>Marketing</p>
           </div>
 
           <div class="data--item">
-            <p><span>51%</span>Mining</p>
+            <p><span class="color-4">5%</span>Referral</p>
           </div>
 
           <div class="data--item">
-            <p><span>51%</span>Mining</p>
+            <p><span class="color-5">5%</span>Reserve</p>
+          </div>
+
+          <div class="data--item">
+            <p><span class="color-6">5%</span>Bonuses</p>
+          </div>
+
+          <div class="data--item">
+            <p><span class="color-7">4%</span>Partnership</p>
           </div>
         </article>
       </div>
@@ -353,13 +361,57 @@
     <section class="faqs-section">
       <h2>Frequently Asked Questions</h2>
 
-      <div class="faqs-container"></div>
+      <div class="faqs-container section_max-width">
+        <div class="faq--item">
+          <button class="accordion">How do I get started?</button>
+          <div class="accordion-content">
+            <p>
+              Join the telegram community first and acquire some $BULLETs on any
+              dex of your choice on Solana. $BULLET will allow you qualify for
+              playing the game.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq--item">
+          <button class="accordion">How do I get started?</button>
+          <div class="accordion-content">
+            <p>
+              Join the telegram community first and acquire some $BULLETs on any
+              dex of your choice on Solana. $BULLET will allow you qualify for
+              playing the game.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq--item">
+          <button class="accordion">How do I get started?</button>
+          <div class="accordion-content">
+            <p>
+              Join the telegram community first and acquire some $BULLETs on any
+              dex of your choice on Solana. $BULLET will allow you qualify for
+              playing the game.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq--item">
+          <button class="accordion">How do I get started?</button>
+          <div class="accordion-content">
+            <p>
+              Join the telegram community first and acquire some $BULLETs on any
+              dex of your choice on Solana. $BULLET will allow you qualify for
+              playing the game.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="roadmap-section">
       <h2>Roadmap</h2>
 
-      <div class="roadmaps-container">
+      <div class="roadmaps-container section_max-width">
         <article class="roadmap--item">
           <h5>V3 2024</h5>
           <ul>
@@ -399,13 +451,13 @@
           ><button class="btn gradient-btn">Play now</button></a
         >
         <a href="#launch-bot"
-          ><button class="btn gradient-btn">Buy $BULLET</button></a
+          ><button class="btn gradient-btn-purple">Buy $BULLET</button></a
         >
       </div>
     </section>
 
     <footer>
-      <div class="footer--wrapper">
+      <div class="footer--wrapper section_max-width">
         <article class="roullete--description">
           <img src="assets/images/logo.png" alt="" />
           <p>
@@ -415,14 +467,16 @@
           </p>
 
           <div class="token-address">
-            <textarea value="FyGDH372892FN7hdh28d2hdj82892j9whwhh2"></textarea>
-
+            <p class="bullet-address">
+              9HGjB1sTXbG3uDtSLXyN4QpvaJApRy73gDBfk1gNLcp9
+            </p>
+            <div id="snackbar">Address copied to clipboard</div>
             <div class="btn-group">
               <a href="#launch-bot"
-                ><button class="btn gradient-btn">Copy</button></a
+                ><button class="btn gradient-btn copy-btn" onclick="copyToClipboard()">Copy <i class="ri-file-copy-line"></i></button></a
               >
               <a href="#launch-bot"
-                ><button class="btn gradient-btn">Dextools</button></a
+                ><button class="btn gradient-btn-purple">Dextools</button></a
               >
             </div>
           </div>

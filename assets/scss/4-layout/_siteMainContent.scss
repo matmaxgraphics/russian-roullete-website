@@ -306,7 +306,7 @@
 }
 
 .tokenomics-section {
-  padding: 48px 0;
+  padding: 48px;
   background-color: rgba($color: #000000, $alpha: 0.7);
   h2 {
     text-align: center;
@@ -315,9 +315,11 @@
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1000px;
-    margin: 24px auto;
+    margin: 48px auto;
+    gap: 24px;
+    flex-wrap: wrap;
     p {
       color: #b7c3c7;
     }
@@ -334,5 +336,185 @@
     align-items: center;
     max-width: 1400px;
     margin: auto;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    max-width: 1400px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 24px;
+    // max-height: 250px;
+  }
+
+  .token-chart {
+    canva {
+      width: 100%;
+    }
+  }
+  .chart-data {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 24px;
+    max-height: 200px;
+  }
+  .data--item {
+    span {
+      border-radius: 4px;
+      padding: 4px 6px;
+      font-weight: 500;
+      margin-right: 8px;
+    }
+  }
+  .color-1 {
+    background-color: rgba($color: #fe6500, $alpha: 0.1);
+    color: #fe6500;
+  }
+  .color-2 {
+    background-color: rgba($color: #9747ff, $alpha: 0.1);
+    color: #9747ff;
+  }
+  .color-3 {
+    background-color: rgba($color: #026dbb, $alpha: 0.1);
+    color: #026dbb;
+  }
+  .color-4 {
+    background-color: rgba($color: #ffaf02, $alpha: 0.1);
+    color: #ffaf02;
+  }
+  .color-5 {
+    background-color: rgba($color: #87f4be, $alpha: 0.1);
+    color: #87f4be;
+  }
+  .color-6 {
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    color: #ffffff;
+  }
+  .color-7 {
+    background-color: rgba($color: #dd4597, $alpha: 0.1);
+    color: #dd4597;
+  }
+}
+
+@media (max-width: 800px) {
+  .tokenomics-section {
+    .tokenomics--wrapper {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .tokenomics-section {
+    .chart-data {
+      flex-flow: row wrap;
+      max-height: unset;
+    }
+  }
+}
+
+.faqs-section {
+  h2 {
+    text-align: center;
+    margin: 48px 0;
+  }
+
+  button.accordion {
+    width: 100%;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    border: 0px;
+    outline: none;
+    border-radius: 8px;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: inherit;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    // margin-bottom: 12px;
+  }
+
+  button.accordion:after {
+    font-family: remixicon !important;
+    content: "\EA4E";
+    font-size: 18px;
+    float: right;
+  }
+  .is-open {
+    max-height: max-content;
+  }
+
+  button.accordion.is-open:after {
+    content: "\EA78";
+  }
+
+  button.accordion:hover,
+  button.accordion.is-open {
+    background-color: rgba($color: #fff, $alpha: 0.2);
+  }
+
+  .accordion-content {
+    background-color: rgba($color: #fff, $alpha: 0.05);
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: max-height 0.2s ease-in-out;
+    border-radius: 0 0 8px 8px;
+    p {
+      margin: 8px 0;
+    }
+  }
+}
+
+.roadmap-section {
+  h2 {
+    text-align: center;
+    margin: 32px;
+  }
+  .roadmaps-container {
+    display: flex;
+    gap: 24px;
+  }
+  .roadmap--item {
+    width: calc(33.3% - 0px);
+    background-color: rgba($color: #fff, $alpha: 0.05);
+    border-radius: 16px;
+    padding: 16px;
+    h5 {
+      margin-bottom: 16px;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 16px;
+    }
+    li {
+      margin-top: 16px;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 48px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .roadmap-section {
+    .roadmaps-container{
+        flex-wrap: wrap;
+    }
+    .roadmap--item {
+      width: calc(50% - 16px)
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap-section {
+    .roadmap--item {
+      width: 100%;
+    }
   }
 }
