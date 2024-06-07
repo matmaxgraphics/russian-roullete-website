@@ -20,7 +20,7 @@ body {
   color: #fff;
   background: rgb(156, 71, 7);
   background: linear-gradient(180deg, rgb(156, 71, 7) 0%, rgb(13, 2, 0) 100%);
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   background-repeat: no-repeat;
 }
 
@@ -31,7 +31,8 @@ h1 {
 
 h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 400;
+  font-family: "Sancreek", serif;
 }
 
 h3 {
@@ -40,7 +41,7 @@ h3 {
 
 h4 {
   font-size: clamp(1.25rem, 2vw, 1.3rem);
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 h5 {
@@ -69,7 +70,7 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   transition: 0.3s;
 }
 a:hover {
@@ -147,7 +148,7 @@ ul {
   }
 }
 .btn {
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   padding: 12px 24px;
   border-radius: 8px;
@@ -479,6 +480,13 @@ nav .navbar__items {
 .gameplay .black--opacity {
   background-color: rgba(0, 0, 0, 0.7);
 }
+.gameplay .black--opacity-40 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.gameplay h4 {
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+}
 .gameplay .gameplay--item img {
   border-radius: 16px;
   width: 80%;
@@ -550,6 +558,8 @@ nav .navbar__items {
 }
 .gameplay-experience .character--item .text-group h4 {
   margin-bottom: 8px;
+  font-family: "Sancreek", serif;
+  font-weight: 400;
 }
 
 @media (max-width: 800px) {
