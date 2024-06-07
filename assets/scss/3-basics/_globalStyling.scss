@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Microgramma D";
+  src: url("../../fonts/Microgramma\ D\ Extended\ Bold.otf");
+  src: local("Microgramma D Extended Bold"),
+    local("../../fonts/Microgramma\ D\ Extended\ Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: $bodyTextColor;
+  background: rgb(156, 71, 7);
+  background: linear-gradient(
+    180deg,
+    rgba(156, 71, 7, 1) 0%,
+    rgba(13, 2, 0, 1) 100%
+  );
+  font-family: $bodyFont;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: $headingFont;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+h3 {
+  font-size: clamp(1.125em, 1.5em, 24px);
+}
+h4 {
+  font-size: clamp(1.25rem, 2vw, 1.3rem);
+  font-family: $bodyFont;
+}
+h5 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3 {
+  color: $titleTextColor;
+}
+p.body-md-size {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.bold-text {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: $bodyFont;
+  transition: 0.3s;
+  &:hover {
+    color: $linkTextHover;
+    transition: 0.3s;
+  }
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.link-text {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.section--bottom__margin {
+  margin-bottom: 96px;
+}
+.section_max-width {
+  max-width: 1400px;
+  margin: auto;
+  padding: 12px 24px;
+}
+ul {
+  list-style: none;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.margin-top {
+  margin-top: 24px;
+}
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+.link-underline {
+  text-decoration: underline;
+}
+
+.flex-container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  .img-container {
+    width: 50%;
+  }
+  .text-description {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    .text-description {
+      width: 100%;
+    }
+    .img-container {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.btn {
+  font-family: $bodyFont;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.gradient-btn {
+  color: $bodyTextColor;
+  position: relative;
+  border: none;
+  background: linear-gradient(
+    75deg,
+    rgba(255, 204, 0, 1) 0%,
+    rgba(254, 101, 0, 1) 100%
+  );
+}
+
+.gradient-btn-purple {
+  color: $bodyTextColor;
+  position: relative;
+  border: none;
+  background: rgb(151, 71, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(151, 71, 255, 1) 0%,
+    rgba(100, 27, 158, 1) 100%
+  );
+}
+
+.sec-btn {
+  color: $bodyTextColor;
+}
