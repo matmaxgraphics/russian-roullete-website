@@ -4,11 +4,7 @@ html {
 
 @font-face {
   font-family: "Microgramma D";
-  src: url("../../fonts/Microgramma D Extended Bold.otf");
-  src: local("Microgramma D Extended Bold"), local("../../fonts/Microgramma D Extended Bold.otf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  src: url("../../fonts/Microgramma_D_Extended_Bold.otf") format("opentype");
 }
 * {
   margin: 0;
