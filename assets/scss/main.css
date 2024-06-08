@@ -707,6 +707,9 @@ nav .navbar__items {
     max-height: unset;
   }
 }
+.faqs-section {
+  margin-bottom: 24px;
+}
 .faqs-section h2 {
   text-align: center;
   margin: 48px 0;
@@ -756,9 +759,15 @@ nav .navbar__items {
   margin: 8px 0;
 }
 
+.roadmap-section header {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 16px;
+  text-align: center;
+}
 .roadmap-section h2 {
   text-align: center;
-  margin: 32px;
+  margin-bottom: 8px;
 }
 .roadmap-section .roadmaps-container {
   display: flex;
@@ -798,5 +807,43 @@ nav .navbar__items {
 @media (max-width: 600px) {
   .roadmap-section .roadmap--item {
     width: 100%;
+  }
+}
+.padding--wrapper {
+  padding: 24px;
+}
+
+.social-links {
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 48px;
+  min-height: 150px;
+}
+.social-links .socials--wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #222;
+  min-height: inherit;
+}
+.social-links h4 {
+  margin-bottom: 8px;
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+}
+.social-links .external--socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.social-links .external--socials i {
+  font-size: 48px;
+}
+
+@media (max-width: 710px) {
+  .social-links .socials--wrapper {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=main.css.map */

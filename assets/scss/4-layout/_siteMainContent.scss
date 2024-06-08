@@ -422,6 +422,7 @@
 }
 
 .faqs-section {
+  margin-bottom: 24px;
   h2 {
     text-align: center;
     margin: 48px 0;
@@ -478,9 +479,15 @@
 }
 
 .roadmap-section {
+  header{
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 16px;
+    text-align: center;
+  }
   h2 {
     text-align: center;
-    margin: 32px;
+    margin-bottom: 8px;
   }
   .roadmaps-container {
     display: flex;
@@ -526,6 +533,49 @@
   .roadmap-section {
     .roadmap--item {
       width: 100%;
+    }
+  }
+}
+
+
+.padding--wrapper{
+  padding: 24px;
+}
+.social-links{
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 48px;
+  min-height: 150px;
+  .socials--wrapper{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: #222;
+    min-height: inherit;
+    
+  }
+  h4{
+    margin-bottom: 8px;
+    font-family: "Sancreek", serif;
+    font-weight: 400;
+  }
+
+  .external--socials{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    i{
+      font-size: 48px;
+    }
+  }
+}
+
+@media(max-width: 710px){
+  .social-links{
+    .socials--wrapper{
+      justify-content: flex-start;
     }
   }
 }
