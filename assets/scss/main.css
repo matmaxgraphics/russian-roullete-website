@@ -483,6 +483,9 @@ nav .navbar__items {
   font-family: "Sancreek", serif;
   font-weight: 400;
 }
+.gameplay .gameplay--item {
+  padding: 48px 0;
+}
 .gameplay .gameplay--item img {
   border-radius: 16px;
   width: 80%;
