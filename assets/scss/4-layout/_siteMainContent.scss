@@ -221,15 +221,16 @@
       width: 100%;
       border-radius: 8px;
       filter: brightness(70%);
+      overflow: hidden;
     }
     img {
       width: 100%;
       border-radius: 8px;
       transition: 0.2s;
-      //   &:hover {
-      //     transform: scale(1.1);
-      //     transition: 0.2s;
-      //   }
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.2s;
+        }
     }
     .text-group {
       position: absolute;

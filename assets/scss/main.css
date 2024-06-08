@@ -537,10 +537,15 @@ nav .navbar__items {
   width: 100%;
   border-radius: 8px;
   filter: brightness(70%);
+  overflow: hidden;
 }
 .gameplay-experience .character--item img {
   width: 100%;
   border-radius: 8px;
+  transition: 0.2s;
+}
+.gameplay-experience .character--item img:hover {
+  transform: scale(1.1);
   transition: 0.2s;
 }
 .gameplay-experience .character--item .text-group {
