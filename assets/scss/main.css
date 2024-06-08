@@ -721,6 +721,7 @@ nav .navbar__items {
   padding: 15px 20px;
   font-size: inherit;
   font-weight: 600;
+  font-family: inherit;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s linear;
