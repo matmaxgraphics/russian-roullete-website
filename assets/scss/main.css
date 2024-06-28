@@ -836,6 +836,10 @@ nav .navbar__items {
   font-family: "Sancreek", serif;
   font-weight: 400;
 }
+.social-links img {
+  width: 40px;
+  height: 40px;
+}
 .social-links .external--socials {
   display: flex;
   gap: 24px;
