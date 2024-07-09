@@ -343,7 +343,7 @@
         </div>
         <div class="text-group">
           <p>Token Symbol</p>
-          <span>$BULLET</span>
+          <span>BULLET</span>
         </div>
         <div class="text-group">
           <p>Tax</p>
@@ -358,23 +358,31 @@
 
         <article class="chart-data">
           <div class="data--item">
-            <p><span class="color-1">60%</span>Presale</p>
+            <p><span class="color-1">10%</span>Private Sale</p>
           </div>
 
           <div class="data--item">
-            <p><span class="color-2">22%</span>Liquidity</p>
+            <p><span class="color-2">50%</span>Presale</p>
           </div>
 
           <div class="data--item">
-            <p><span class="color-3">8%</span>Advisors & Partners</p>
+            <p><span class="color-3">21%</span>Liquidity Pool</p>
           </div>
 
           <div class="data--item">
-            <p><span class="color-4">5%</span>CEX Listing</p>
+            <p><span class="color-4">8%</span>Advisors & Partners</p>
           </div>
 
           <div class="data--item">
-            <p><span class="color-5">5%</span>Team</p>
+            <p><span class="color-5">5%</span>CEX Listing (Locked)</p>
+          </div>
+
+          <div class="data--item">
+            <p><span class="color-6">5%</span>Team (Locked)</p>
+          </div>
+
+          <div class="data--item">
+            <p><span class="color-7">1%</span>Airdrop campaign</p>
           </div>
         </article>
       </div>
@@ -557,7 +565,7 @@
           </p>
 
           <div class="token-address">
-            <p class="bullet-address">xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <p class="bullet-address">FNDcMBWhwwEy1i1mo2HGB1C4Gksviy5Lj5kQoPT2HLkH</p>
             <div id="snackbar">Address copied to clipboard</div>
             <div class="btn-group">
               <button
@@ -623,14 +631,16 @@
 
     <script>
       const xValues = [
+        "Private Sale",
         "Presale",
-        "Liquidity",
+        "Liquidity Pool",
         "Advisors & Partners",
         "CEX Listing",
         "Team",
+        "Airdrop campaign"
       ];
-      const yValues = [60, 22, 8, 5, 5];
-      const barColors = ["#fe6500", "#9747ff", "#026dbb", "#ffaf02", "#87f4be"];
+      const yValues = [10, 50, 21, 8, 5, 5, 1];
+      const barColors = ["#fe6500", "#9747ff", "#026dbb", "#ffaf02", "#87f4be", "#ffffff", "#dd4597"];
 
       new Chart("myChart", {
         type: "doughnut",
